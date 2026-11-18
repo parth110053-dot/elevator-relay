@@ -1,0 +1,30 @@
+name: relay-fetch
+on:
+  push:
+    paths:
+      - 'queue/**'
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download files listed in queue
+        run: |
+          for f in queue/*.txt; do
+            [ -e "$f" ] || continue
+            while read -r name url; do
+              [ -z "$name" ] && continue
+              mkdir -p "$(dirname "$name")"
+              curl -fsSL "$url" -o "$name"
+            done < "$f"
+            git rm -q "$f"
+          done
+      - name: Commit results
+        run: |
+          git config user.name relay-bot
+          git config user.email relay-bot@users.noreply.github.com
+          git add -A
+          git commit -m "relay: fetched files" || exit 0
+          git push
