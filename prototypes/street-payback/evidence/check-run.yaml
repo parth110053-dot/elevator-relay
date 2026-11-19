@@ -4,7 +4,7 @@
 kind: check-run/1
 engine: web
 browser: "HeadlessChrome/153.0.0.0"
-time: "2026-11-19 13:00:01"
+time: "2026-11-19 19:27:12"
 checks:
   - id: boots
     result: pass
@@ -34,7 +34,7 @@ brief_checklist:
   - id: L1
     result: pass
     evidence: "evidence/play.png"
-    item: "Look: bright colourful low-poly 3D city, chunky toy-like vehicles with strong silhouettes, warm sunlight, explosions with smoke and sparks; every figure drawn, no emoji, no plain boxes as vehicles."
+    item: "Look: dusk-lit 3D city, burning wrecks, smoke, orange sky, chunky toy-like vehicles with strong silhouettes, warm sunlight, explosions with smoke and sparks; every figure drawn, no emoji, no plain boxes as vehicles."
   - id: L2
     result: pass
     evidence: "evidence/play.png"
@@ -42,7 +42,7 @@ brief_checklist:
   - id: L3
     result: pass
     evidence: "evidence/play.png"
-    item: "View: 3D · Camera: tilted top-down about 55 degrees, follows the vehicle, widens with speed."
+    item: "View: 3D · Camera: third-person chase camera behind the vehicle, widens with speed (changed after play: the person wanted a Payback 2-style chase view)."
   - id: F1
     result: pass
     evidence: "evidence/figures.png"
@@ -129,7 +129,7 @@ brief_checklist:
     item: "A loss restarts the mode."
 measures:
   - id: step-time
-    value: 2.200
+    value: 5.700
     unit: ms
     by: browser
-    detail: "mean 0.110 ms, slowest 2.200 ms, 462 steps"
+    detail: "mean 0.150 ms, slowest 5.700 ms, 586 steps"

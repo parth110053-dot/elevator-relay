@@ -18,9 +18,9 @@ Payback 2 jaisa 3D game, "not as it is", thoda idhar-udhar kar sakte ho: car, bi
 **Intent:** *soft or no failure* not used; hard failure per mode.
 
 ## Look and references
-- Look: bright colourful low-poly 3D city, chunky toy-like vehicles with strong silhouettes, warm sunlight, explosions with smoke and sparks; every figure drawn, no emoji, no plain boxes as vehicles.
+- Look: dusk-lit 3D city, burning wrecks, smoke, orange sky, chunky toy-like vehicles with strong silhouettes, warm sunlight, explosions with smoke and sparks; every figure drawn, no emoji, no plain boxes as vehicles.
 - References: Payback 2 (tilted top-down camera, arena chaos, pickups, explosions) *guided only, original names/art*; Burnout (takedowns).
-- View: 3D · Camera: tilted top-down about 55 degrees, follows the vehicle, widens with speed.
+- View: 3D · Camera: third-person chase camera behind the vehicle, widens with speed (changed after play: the person wanted a Payback 2-style chase view).
 
 ## First minute
 Start screen with controls, pick Car or Bike and a mode. Spawn in a city arena, drive 5 seconds, grab a glowing weapon pickup, fire at a first rival, and see the first rival blow up with sparks and a score popup.
@@ -74,3 +74,5 @@ Wreck: first rival packs of 3 at once by about 40 s, then waves of 4-5 with 4 dr
 **Who it's for / what they feel:** players of arcade car combat who want chaos and aggressive rivals.
 
 **Games you love / don't:** Love Payback 2 (the AI and arena chaos).
+
+After play: the graphics were not close enough to Payback 2. Wanted: chase camera behind the car, dusk orange sky with fire and smoke, realistic muscle cars, tanks, fuel tankers and an RC car, round minimap, weapon bar, rank list. Not a copy of its name, art, maps or UI.

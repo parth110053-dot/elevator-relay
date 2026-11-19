@@ -19,6 +19,18 @@ window.CONFIG = {
   bike_turn: { value: 2.9, min: 0.8, max: 5, step: 0.1 },
   bike_grip: { value: 8, min: 1, max: 16, step: 0.25 },
   bike_hp: { value: 55, min: 20, max: 200, step: 5 },
+  // --- Player tank: slow, tough, turret aims itself ---
+  tank_top_speed: { value: 14, min: 6, max: 30, step: 1 },
+  tank_accel: { value: 11, min: 4, max: 30, step: 1 },
+  tank_turn: { value: 1.5, min: 0.5, max: 3, step: 0.1 },
+  tank_grip: { value: 9, min: 2, max: 16, step: 0.25 },
+  tank_hp: { value: 260, min: 80, max: 600, step: 10 },
+  // --- Player RC buggy: tiny, quick, very fragile ---
+  rc_top_speed: { value: 30, min: 10, max: 50, step: 1 },
+  rc_accel: { value: 40, min: 10, max: 70, step: 1 },
+  rc_turn: { value: 3.2, min: 1, max: 5, step: 0.1 },
+  rc_grip: { value: 9, min: 2, max: 16, step: 0.25 },
+  rc_hp: { value: 35, min: 10, max: 120, step: 5 },
   // --- Handling shared ---
   brake_force: { value: 38, min: 10, max: 80, step: 1 }, // m/s^2
   drag: { value: 0.3, min: 0, max: 1, step: 0.02 }, // 1/s
@@ -52,6 +64,9 @@ window.CONFIG = {
   flanker_hp: { value: 55, min: 20, max: 200, step: 5 },
   police_hp: { value: 70, min: 20, max: 200, step: 5 },
   racer_hp: { value: 80, min: 20, max: 200, step: 5 },
+  tanker_hp: { value: 150, min: 40, max: 400, step: 10 },
+  tanker_blast_damage: { value: 45, min: 10, max: 120, step: 5 },
+  tanker_blast_radius: { value: 13, min: 4, max: 30, step: 1 },
   lunge_time: { value: 1.3, min: 0.5, max: 3, step: 0.1 },
   lunge_cooldown: { value: 2.5, min: 0.5, max: 8, step: 0.1 },
   // --- Wreck mode ---
@@ -69,7 +84,8 @@ window.CONFIG = {
   police_interval: { value: 20, min: 5, max: 60, step: 1 }, // seconds per extra cruiser
   police_max: { value: 6, min: 2, max: 10, step: 1 },
   // --- Camera ---
-  cam_height: { value: 40, min: 20, max: 70, step: 1 },
-  cam_back: { value: 20, min: 8, max: 50, step: 1 },
-  cam_zoom: { value: 0.45, min: 0, max: 1.5, step: 0.05 }, // extra height per m/s
+  cam_height: { value: 4.6, min: 2, max: 20, step: 0.1 }, // m above the vehicle
+  cam_back: { value: 11, min: 5, max: 30, step: 0.5 }, // m behind the vehicle
+  cam_zoom: { value: 0.14, min: 0, max: 0.6, step: 0.01 }, // extra distance per m/s
+  cam_fov: { value: 62, min: 40, max: 90, step: 1 },
 };

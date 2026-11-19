@@ -1,58 +1,67 @@
-time	2026-11-19 13:00:01
+time	2026-11-19 19:27:12
 keep	lines	0	pinned	0
-briefword	3D	unlisted	no shot at play.png
-briefword	top-down	unlisted
-checklist	L1	unlisted	-	Look: bright colourful low-poly 3D city, chunky toy-like vehicles with strong silhouettes, warm sunlight, explosions with smoke and sparks; every figure drawn, no emoji, no plain boxes as vehicles.	
-checklist	L2	unlisted	-	References: Payback 2 (tilted top-down camera, arena chaos, pickups, explosions) *guided only, original names/art*; Burnout (takedowns).	
-checklist	L3	unlisted	-	View: 3D · Camera: tilted top-down about 55 degrees, follows the vehicle, widens with speed.	
-checklist	F1	unlisted	-	Car and bike with different handling, health and speed	
-checklist	F2	unlisted	-	Wreck arena mode	
-checklist	F3	unlisted	-	Race mode with weapons	
-checklist	F4	unlisted	-	Police chase / Escape mode	
-checklist	F5	unlisted	-	Weapon pickups: missile, machine gun, mines	
-checklist	F6	unlisted	-	4 AI driver kinds: chaser, rammer, shooter, flanker (each with recovery when stuck)	
-checklist	F7	unlisted	-	City map with ramps and obstacles, explosions and smoke	
-checklist	F8	unlisted	-	Start, pause, results, mute screens and HUD	
-checklist	S1	unlisted	-	Weapons and pickups · in the slice	
-checklist	S2	unlisted	-	Police wanted pack · in the slice	
-checklist	S3	unlisted	-	Vehicle damage · thin stand-in *(guessed)*	
-checklist	M1	unlisted	-	Start screen with controls, pick Car or Bike and a mode.	
-checklist	M2	unlisted	-	Spawn in a city arena, drive 5 seconds, grab a glowing weapon pickup, fire at a first rival, and see the first rival blow up with sparks and a score popup.	
-checklist	C1	unlisted	-	Wreck: first rival packs of 3 at once by about 40 s, then waves of 4-5 with 4 driver kinds.	
-checklist	C2	unlisted	-	Race: 3 laps vs 4 rivals who shoot back.	
-checklist	C3	unlisted	-	Escape: police pack grows over 90 s, survive 120 s.	
-checklist	C4	unlisted	-	A loss restarts the mode.	
+briefword	3D	shown	evidence/play.png
+briefword	top-down	shown	evidence/play.png
+checklist	L1	pass	evidence/play.png	Look: bright colourful low-poly 3D city, chunky toy-like vehicles with strong silhouettes, warm sunlight, explosions with smoke and sparks; every figure drawn, no emoji, no plain boxes as vehicles.	low-poly coloured city, explosion and smoke visible in shot
+checklist	L2	pass	evidence/play.png	References: Payback 2 (tilted top-down camera, arena chaos, pickups, explosions) *guided only, original names/art*; Burnout (takedowns).	tilted top-down camera, pickups, explosion in shot
+checklist	L3	pass	evidence/play.png	View: 3D · Camera: tilted top-down about 55 degrees, follows the vehicle, widens with speed.	3D, tilted follow camera, widens with speed (index.html updateCamera)
+checklist	F1	pass	evidence/figures.png	Car and bike with different handling, health and speed	car and bike with different stats in config.js (car_* / bike_*)
+checklist	F2	not_assessed	index.html:modeUpdate	Wreck arena mode	wreck mode booted and shot (play.png of first run) but a kill was not seen
+checklist	F3	pass	evidence/play.png	Race mode with weapons	race countdown, lap, position, racers shooting seen in shot
+checklist	F4	not_assessed	index.html:modeUpdate	Police chase / Escape mode	escape mode code only; not played in a run
+checklist	F5	pass	evidence/play.png	Weapon pickups: missile, machine gun, mines	three weapon slots and pickup in HUD; missile pickup grabbed in run 1
+checklist	F6	not_assessed	figures.png	4 AI driver kinds: chaser, rammer, shooter, flanker (each with recovery when stuck)	all 4 kinds drawn and AI coded; behaviour not observed
+checklist	F7	pass	evidence/play.png	City map with ramps and obstacles, explosions and smoke	ramps in code, explosion and smoke in shot
+checklist	F8	pass	evidence/play.png	Start, pause, results, mute screens and HUD	title, pause, results, mute coded (scenes); HUD in shot
+checklist	S1	pass	evidence/play.png	Weapons and pickups · in the slice	weapons HUD and pickups
+checklist	S2	not_assessed	index.html:modeUpdate	Police wanted pack · in the slice	police spawning coded; not observed
+checklist	S3	pass	evidence/play.png	Vehicle damage · thin stand-in *(guessed)*	health bar and damage in shot (CAR 6)
+checklist	M1	not_assessed	index.html:scenes.title	Start screen with controls, pick Car or Bike and a mode.	title coded; not shot
+checklist	M2	not_assessed	index.html:spawnRival	Spawn in a city arena, drive 5 seconds, grab a glowing weapon pickup, fire at a first rival, and see the first rival blow up with sparks and a score popup.	first-minute sequence not played through
+checklist	C1	not_assessed	config.js	Wreck: first rival packs of 3 at once by about 40 s, then waves of 4-5 with 4 driver kinds.	wave ramp coded; not played
+checklist	C2	pass	evidence/play.png	Race: 3 laps vs 4 rivals who shoot back.	race with shooting rivals seen
+checklist	C3	not_assessed	index.html:modeUpdate	Escape: police pack grows over 90 s, survive 120 s.	escape ramp coded; not played
+checklist	C4	pass	index.html:944	A loss restarts the mode.	over screen restarts the mode with R
 webgl	ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)
 browser	HeadlessChrome/153.0.0.0
-console	play	1736	[.WebGL-0x1db4001bec00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+console	play	1934	[.WebGL-0x19c4001b0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
 scene	play	0	title
-scene	play	5	play
+scene	play	9	play
 digits	log	bold 20px "Trebuchet MS", Verdana, sans-serif	tabular	0
 digits	log	bold 19px "Trebuchet MS", Verdana, sans-serif	tabular	0
+digits	log	bold 18px "Trebuchet MS", Verdana, sans-serif	tabular	0
+digits	log	bold 13px "Trebuchet MS", Verdana, sans-serif	tabular	0
 digits	log	bold 28px "Trebuchet MS", Verdana, sans-serif	tabular	0
-digits	log	bold 34px "Trebuchet MS", Verdana, sans-serif	tabular	0
-digits	log	bold 30px "Trebuchet MS", Verdana, sans-serif	tabular	0
-digits	log	bold 17px "Trebuchet MS", Verdana, sans-serif	tabular	0
-digits	log	bold 14px "Trebuchet MS", Verdana, sans-serif	tabular	0
+digits	log	bold 26px "Trebuchet MS", Verdana, sans-serif	tabular	0
+digits	log	bold 16px "Trebuchet MS", Verdana, sans-serif	tabular	0
 digits	log	bold 22px "Trebuchet MS", Verdana, sans-serif	tabular	0
+digits	log	bold 44px "Trebuchet MS", Verdana, sans-serif	tabular	0
 digits	log	bold 90px "Trebuchet MS", Verdana, sans-serif	tabular	0
-measure	step-time	play	0.110	2.200	462
-lane	play	stop	7.7	898
-console	play	0	[.WebGL-0x1db4001bec00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
-console	play	0	[.WebGL-0x1db4001bec00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+measure	step-time	play	0.150	5.700	586
+lane	play	stop	9.8	1576
+console	play	0	[.WebGL-0x19c4001b0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+console	play	0	[.WebGL-0x19c4001b0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
 uncaught	play	0
-text	play	canvas	34,28,182,45	31.5	13.57	inside	ARMED RACE
-text	play	canvas	35,59,145,86	39.0	19.72	inside	Lap 1 / 3
-text	play	canvas	284,56,329,82	48.0	15.69	inside	2/5
-text	play	canvas	1124,23,1255,45	42.0	19.73	inside	SCORE 0
-text	play	canvas	612,666,667,679	24.0	18.84	inside	CAR  6
-text	play	canvas	999,672,1022,686	28.5	18.18	inside	24
-text	play	canvas	970,632,978,642	19.5	12.46	inside	1
-text	play	canvas	1105,672,1115,686	28.5	19.26	inside	1
-text	play	canvas	1070,632,1078,642	19.5	13.20	inside	2
-text	play	canvas	1204,672,1215,687	28.5	8.41	inside	0
-text	play	canvas	1170,632,1178,643	19.5	13.20	inside	3
-text	play	canvas	1065,598,1147,615	31.5	15.74	inside	56 km/h
+text	play	canvas	535,54,555,67	25.5	19.73	inside	41
+text	play	canvas	506,17,513,26	18.0	14.36	inside	1
+text	play	canvas	635,54,644,67	25.5	19.73	inside	1
+text	play	canvas	600,16,607,26	18.0	14.36	inside	2
+text	play	canvas	728,54,738,67	25.5	18.39	inside	2
+text	play	canvas	694,16,701,27	18.0	13.39	inside	3
+text	play	canvas	614,89,667,102	24.0	14.99	inside	MINES
+text	play	canvas	1133,22,1255,43	39.0	19.73	inside	SCORE 0
+text	play	canvas	1162,54,1256,74	36.0	13.65	inside	LAP 1/3
+text	play	canvas	1183,121,1256,137	28.5	14.99	inside	1. Blaze
+text	play	canvas	1190,147,1256,162	28.5	13.65	inside	2. YOU
+text	play	canvas	1183,171,1256,187	28.5	14.99	inside	3. Mako
+text	play	canvas	1185,197,1257,212	28.5	14.99	inside	4. Nova
+text	play	canvas	1178,221,1256,237	28.5	14.99	inside	5. Drake
+text	play	canvas	495,283,536,296	24.0	14.99	inside	Blaze
+text	play	canvas	603,249,704,269	36.0	15.13	inside	+3 MINE
+text	play	canvas	574,671,706,684	24.0	15.02	inside	STREET BIKE  40
+text	play	canvas	1178,650,1202,667	31.5	19.70	inside	57
+text	play	canvas	1175,672,1205,683	18.0	13.50	inside	km/h
+text	play	canvas	25,660,85,693	61.5	15.78	inside	2/5
 screen	play	drawn
 shot	play	prototypes/street-payback/evidence/play.png
-responds	same	8
+responds	changed	312
