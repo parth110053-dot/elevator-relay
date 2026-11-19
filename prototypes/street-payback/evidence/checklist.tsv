@@ -1,0 +1,20 @@
+L1	pass	evidence/play.png	low-poly coloured city, explosion and smoke visible in shot
+L2	pass	evidence/play.png	tilted top-down camera, pickups, explosion in shot
+L3	pass	evidence/play.png	3D, tilted follow camera, widens with speed (index.html updateCamera)
+F1	pass	evidence/figures.png	car and bike with different stats in config.js (car_* / bike_*)
+F2	not_assessed	index.html:modeUpdate	wreck mode booted and shot (play.png of first run) but a kill was not seen
+F3	pass	evidence/play.png	race countdown, lap, position, racers shooting seen in shot
+F4	not_assessed	index.html:modeUpdate	escape mode code only; not played in a run
+F5	pass	evidence/play.png	three weapon slots and pickup in HUD; missile pickup grabbed in run 1
+F6	not_assessed	figures.png	all 4 kinds drawn and AI coded; behaviour not observed
+F7	pass	evidence/play.png	ramps in code, explosion and smoke in shot
+F8	pass	evidence/play.png	title, pause, results, mute coded (scenes); HUD in shot
+S1	pass	evidence/play.png	weapons HUD and pickups
+S2	not_assessed	index.html:modeUpdate	police spawning coded; not observed
+S3	pass	evidence/play.png	health bar and damage in shot (CAR 6)
+M1	not_assessed	index.html:scenes.title	title coded; not shot
+M2	not_assessed	index.html:spawnRival	first-minute sequence not played through
+C1	not_assessed	config.js	wave ramp coded; not played
+C2	pass	evidence/play.png	race with shooting rivals seen
+C3	not_assessed	index.html:modeUpdate	escape ramp coded; not played
+C4	pass	index.html:944	over screen restarts the mode with R
